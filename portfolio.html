@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - My Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigasi Atas Tengah -->
+  <nav class="top-nav">
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button id="darkModeToggle">🌓</button>
+  </nav>
+
+  <!-- Konten Utama Portfolio -->
+  <main>
+    <section style="padding: 100px 10% 40px;"> <!-- Padding atas ditambah agar tidak tertutup nav -->
+      <h2 style="text-align: center; margin-bottom: 20px; font-size: 2.5rem;">Featured Projects</h2>
+      <p style="text-align: center; margin-bottom: 40px; opacity: 0.7;">Berikut adalah kumpulan proyek Web Development dan IoT saya.</p>
+      
+      <!-- Search Bar -->
+      <div style="display: flex; justify-content: center; margin-bottom: 30px;">
+        <input type="text" id="searchBar" placeholder="Cari nama proyek..." 
+               style="padding: 15px 25px; width: 100%; max-width: 500px; border-radius: 50px; border: 1px solid #ccc; outline: none;">
+      </div>
+
+      <!-- Wadah Kartu Proyek -->
+      <div id="projectContainer" class="grid">
+        <!-- Kartu akan muncul secara otomatis di sini melalui script.js -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal untuk membesarkan gambar -->
+  <div id="imageModal" class="modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="imgFull">
+  </div>
+
+  <!-- Footer sederhana -->
+  <footer style="text-align: center; padding: 40px; opacity: 0.5; font-size: 14px;">
+    &copy; 2026 Student Portfolio | SMK Negeri 1 Probolinggo
+  </footer>
+
+  <!-- Script untuk menarik data dari JSON -->
+  <script src="script.js"></script>
+</body>
+</html>
