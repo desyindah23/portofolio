@@ -24,7 +24,8 @@ const myProjects = [
 function displayProjects(projects) {
     const projectContainer = document.getElementById('projectContainer');
     if(!projectContainer) return;
-sss
+
+    // KOREKSI: Teks 'sss' yang mengganggu sudah dihapus dari sini
     projectContainer.innerHTML = ''; 
     
     projects.forEach(project => {
@@ -42,6 +43,7 @@ sss
     });
 }
 
+// 3. FUNGSI GANTI BACKGROUND & TEMA
 function changeBg(color) {
     const btn = document.getElementById("darkModeToggle");
     document.documentElement.style.setProperty('--bg', color);
@@ -114,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- LOGIKA TOMBOL DARK MODE (Jika ada tombol khusus) ---
+    // --- LOGIKA TOMBOL DARK MODE ---
     const toggleBtn = document.getElementById('darkModeToggle');
     if(toggleBtn) {
         toggleBtn.addEventListener('click', () => {
