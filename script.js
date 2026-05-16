@@ -3,19 +3,19 @@ const myProjects = [
   {
     "title": "Website Absensi Kelas",
     "category": "Web",
-    "description": "Website untuk absen kelas.",
+    "description": "Web Absensi Kelas Digital adalah platform sederhana untuk mencatat data kehadiran siswa secara efisien. Menggunakan desain yang responsif dan minimalis, aplikasi ini memungkinkan guru atau ketua kelas untuk menginput data harian serta mengelola database kehadiran dengan fitur Edit dan Hapus langsung dari satu halaman utama.",
     "image": "absensikelas.png"
   },
   {
     "title": "Kasir Pemesanan",
     "category": "html",
-    "description": "Aplikasi sederhana untuk guru mengabsen hadir.",
+    "description": "Sistem Kasir Web Bakso Jeroan Malang adalah aplikasi kasir (POS) digital modern yang menampilkan daftar menu interaktif lengkap dengan foto produk dan filter kategori untuk memudahkan pemilihan makanan. Aplikasi ini dilengkapi dengan keranjang belanja dinamis yang berfungsi untuk mengelola jumlah item, menghitung total harga otomatis, dan memproses pesanan secara cepat dan efisien.",
     "image": "webkasir.png"
   },
   {
     "title": "Web Produk UMKM",
     "category": "Web",
-    "description": "Website yang membantu masyarakat mendaftar BPJS.",
+    "description": "Website Jajanan Gen Z adalah platform e-commerce UMKM berbasis web yang berfungsi sebagai katalog produk makanan interaktif untuk memudahkan pelanggan menjelajahi menu kuliner kekinian. Website ini dilengkapi navigasi menu atas dan tombol pintas visual di halaman beranda yang menghubungkan pengguna langsung ke fitur utama seperti daftar produk, manajemen pesanan, halaman iklan, informasi kontak, serta fitur kustomisasi latar belakang.",
     "image": "webumkm.png"
   }
 ];
@@ -24,7 +24,7 @@ const myProjects = [
 function displayProjects(projects) {
     const projectContainer = document.getElementById('projectContainer');
     if(!projectContainer) return;
-
+sss
     projectContainer.innerHTML = ''; 
     
     projects.forEach(project => {
